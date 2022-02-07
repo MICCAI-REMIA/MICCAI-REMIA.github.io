@@ -1,4 +1,4 @@
-# UNSURE Website
+# REMIA Website
 
 Website based on first edition of the [SWITCH: Stroke Workshop on Imaging and Treatment CHallenges](http://switchmiccai.mit.edu). 
 
