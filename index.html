@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>REMIA: R E M I A</title>
+    <title>REMIA: Resource-Efficient Medical Image Analysis</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -32,26 +32,20 @@
     <section class="hero">
         <section class="navigation">
             <header>
-                <div class="header-content">
-                    <div class="logo"><a href="#"><img src="img/logo_unsure_first.png" alt="unsure logo"></a></div>
+                <div class="header-content"> 
                     <div class="header-nav">
                         <nav>
                             <ul class="primary-nav">
-                                <!-- <li><a href="#updates">Updates</a></li> -->
-                                <li><a href="#overview">About</a></li>
+                                <li><a href="#updates">Updates</a></li> 
                                 <li><a href="#dates">Important Dates</a></li>
-                                <li><a href="#callforpapers">Call for Papers</a></li>
-                                <!-- <li><a href="#resources">Resources</a></li> -->
-                                <li><a href="#program">Program</a></li>
-                                <!-- <li><a href="#about">Details</a></li> -->
-                                <li><a href="#people">Organization</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <!-- <li><a href="#sponsors">Sponsors</a></li> -->
-                                <li><a href="https://cmt3.research.microsoft.com/UNSURE2021" target="_blank">Submit</a></li>
+                                <li><a href="#overview">About</a></li> 
+                                <li><a href="#program">Program</a></li> 
+                                <li><a href="#people">Organization</a></li>  
+                                <li><a href="https://cmt3.research.microsoft.com/REMIA2022" target="_blank">Submit</a></li>
                             </ul>
                             <ul class="member-actions">
-                                <span style="color:aliceblue"><a href="http://miccai2021.org" target="_blank">A workshop at &nbsp;</span>
-                                <img src="img/logo_miccai3.png" ></a>
+                                <span style="color:rgb(0, 0, 0)"><a href="http://miccai2021.org" target="_blank">A workshop at &nbsp;</span>
+                                    <img src="img/newsletter-subs-title-mini.png" ></a>
                             </ul>
                         </nav>
                     </div>
@@ -66,8 +60,9 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="hero-content text-center">
-                        <h1><b>REMIA2022</b><br><b>R</b>ab <b>R</b>c <b>M</b>d<b>e</b>f<b>g</b>h</h1>
-                        <!--<a href="#" class="btn btn-accent btn-large">Submit paper!</a>-->
+                        <h1><b>REMIA2022:</b><br>
+                            <it>MICCAI Workshop on <b>R</b>esource-<b>E</b>fficient <b>M</b>edical <b>I</b>mage <b>A</b>nalysis</it>
+                        </h1> 
                     </div>
                 </div>
             </div>
@@ -83,7 +78,7 @@
                     <div class="intro-content">
                         <h2>Recent Updates</h2>
                         <ul>
-                          <li> Test 2022 </li> 
+                          <li> [14/02/22] Submission system is opened: <a href="https://cmt3.research.microsoft.com/REMIA2022" target="_blank">Submit</a> </li> 
                       </ul>
                  </div>
                </div>
@@ -101,7 +96,17 @@
                         <h2>Important Dates</h2>
 
                         <ul>
-                          <li><span>October 1, 2022</span> <strong>Workshop date</strong> </li>
+                          <li><span>Feb 20, 2022</span> <strong>Paper Submission Opening</strong> </li>
+                          <li><span>Jun 15, 2022</span> <strong>Paper Submission Deadline </strong> 
+                            <ul>
+                                <li>Authors are recommended to submit a placeholder in the CMT system by Jun 1.</li>
+                                <li>Allowed submission of rejected main-conference MICCAI papers [in this case, the authors should provide: (1) their original submission, (2) the reviews from the main conference submission, (3) a response to the reviewer comments, and a description of what has changed in the new submission, and (4) their new submission]</li>
+
+                            </ul>
+                        </li>
+                          <li><span>Jul 10, 2022</span> <strong>Notification of Paper Decision </strong> </li>
+                          <li><span>Jul 20, 2022</span> <strong>Camera-ready Paper Due </strong> </li>
+                          <li><span>Sep 22, 2022</span> <strong>REMIA  Workshop </strong> </li>
 
                           </ul>
                     </div>
@@ -115,61 +120,56 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="intro-content">
-                        <h2>About the MICCAI UNSURE Workshop</h2>
+                        <h2>About the MICCAI REMIA Workshop</h2>
 
                         <h3>Overview</h3>
-
-                        <p>Test</p>
+                        <p>Deep learning methods have shown remarkable success in many medical imaging tasks over the past few years. However, there exists a challenge that current deep learning models are usually data-hungry, requiring massive amounts of high-quality annotated data to achieve high performance. </p>
+                        
+                    <p>Firstly, collecting large scale medical imaging datasets is usually expensive and time-consuming, and the regulatory and governance also raise additional challenges for practical healthcare applications. Moreover, the domain shifts in medical data caused by factors such as different medical devices, different subject cohorts and different scanning configurations and conditions have been challenging for deploying the AI models for real-world applications. Secondly, acquiring the data annotations is even more of a challenge as the experienced and knowledgeable clinicians are required to provide high quality annotations. The annotation process is labour-intensive and time-consuming when it comes to the segmentation tasks, especially for 3D medical data, such as CT, OCT and MRI scans etc.. Minutes to hours may be required for the clinicians to annotate single image, given the complexity of the segmentation tasks. Thirdly, it is infeasible to deploy large deep learning models to edge devices for various medical tasks within a low-resource situation, especially with hardware constraints for practical clinical applications in the era of Telehealth and Metaverse.</p>
+                    
+                    <p>The vanilla deep learning models usually have limited ability of learning from sparse training samples. Consequently, to enable efficient and practical deep learning models for medical imaging, there is a need for research methods that can handle limited number of training data, limited labels and limited hardware constraints when deploying the model. To address the limited data challenge, recent methods related to data efficiency such as transfer learning, domain adaptation that can mitigate the domain shifts problem in medical imaging have been proposed in medical image analysis field. Besides, label efficiency methods such as partially-supervised learning, annotation-efficient learning and weakly supervised learning methods including semi-supervised, unsupervised, self-supervised as well as contrastive learning have been widely studied in this field including recent published work in MICCAI conferences etc. However, hardware efficiency related topics such as neural network compression, neural architecture search, etc has not been fully explored in the field. Therefore, in this workshop, we will encourage submissions on this topic to discuss the potential research problems raised by hardware efficiency, preparing for more AI applications for Metaverse and Telemedicine.
+                    </p>
 
                         <h3>Details</h3>
 
-                        <p>Test</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-
-
-    <section class="features section-padding" id="callforpapers">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="feature-list">
-
-                        <h2>Call for Papers</h2>
-
-                        <h3>Scope</h3>
-
-                        <p>Test:
+                        <p>We propose the below research topics from data, annotation and hardware perspectives for medical image analysis. Topics of interest include, but are not limited to:</p>
                         <ul>
-                          <li> a </li>
-                          <li> b </li>
+                            <li>Data efficiency:
+                                <ul>
+                                    <li>Transfer learning;</li>
+                                    <li>Unsupervised domain adaptation;</li>
+                                    <li>Single-shot/One-shot/Few-shot learning methods;</li>
+                                    <li>Medical image classification/segmentation with small training dataset;</li>
+                                </ul>
+                            </li>
+                            <li>Label efficiency:
+                                <ul>
+                                    <li>Partial annotation/label learning methods;</li>
+                                    <li>Weakly-supervised learning methods;</li>
+                                    <li>Semi-supervised learning methods;</li>
+                                    <li>Unsupervised learning methods;</li>
+                                    <li>Self-supervised learning methods;</li>
+                                    <li>Contrastive learning;</li>
+                                </ul>
+                            </li>
+                            <li>Hardware efficiency:
+                                <ul>
+                                    <li>Neural network compression;</li>
+                                    <li>Knowledge distillation;</li>
+                                    <li>Neural architecture search;</li>
+                                    <li>Lightweight network design for medical image analysis;</li>
+                                </ul>
+                            </li>
+                            <li>Resource-efficient learning for real-world applications:
+                                <ul>
+                                    <li>Model deployment on low-resource devices;</li>
+                                    <li>Knowledge distillation;</li>
+                                    <li>Disease diagnosis, progression and treatment stratification with limited training data;</li>
+                                    <li>New datasets and benchmark for resource-efficient learning in medical image analysis;</li>
+                                </ul>
+                            </li>
+
                         </ul>
-                        </p>
-
-                        <h3>Submission Format</h3>
-
-                        <p>Submissions must be 8-page papers <b>(excluding references)</b> following the 
-                            <a href='https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines'>Springer LNCS format</a>. 
-                            Author names, affiliations and acknowledgements, as well as any obvious phrasings or clues that can identify authors 
-                            must be removed to ensure anonymity. Note that in contrast to the requirements to the main MICCAI conference, the 8 page 
-                            limit refers only to the main content. Including references and acknowledgements the submission may exceed 8 pages.
-                        </p>
-
-                        <h3>How to submit?</h3>
-
-                        Please submit papers using the <a href="https://cmt3.research.microsoft.com/UNSURE2021" target="_blank">paper submission system</a>.
-                        <br><b>Submission Deadline: June 25, 2022 - 23:59 (AoE time)</b>
-                        <!-- <br><s><b>Submission Deadline: June 25, 2021 - 23:59 (AoE time)</b></s> -->
-                        <!-- <br><b>Extended Submission Deadline: July 2, 2021 - 23:59 (AoE time)</b> -->
-
-                        <h3>Publication</h3>
-                        All accepted papers will be published as part of the <b>MICCAI Satellite Events joint LNCS proceedings</b> to be published by Springer Nature.
-<!-- 
-                        <h3>Presentation</h3>
-                        All accepted papers will be presented virtually at the UNSURE workshop on 8. October 2020. We will select a number of papers for long oral presentation based on the reviewers' suggestions. All authors will additionally get the opportunity to present their work as poster during the workshop poster session. -->
 
                     </div>
                 </div>
@@ -177,63 +177,6 @@
         </div>
      </section>
 
-
-
-    <!-- <section class="features-extra dates section-padding" id="resources">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="feature-list">
-                        <h2>Resources</h2>
-
-                        <h3>Best paper award</h3>
-
-                        The UNSURE 2020 best paper award was presented to <b>Max-Heinrich Laves</b> and colleagues for their work: <a href='https://link.springer.com/chapter/10.1007/978-3-030-60365-6_9'>Uncertainty Estimation in Medical Image Denoising with Bayesian Deep Image Prior</a>.
-
-                        <h3>Best paper runner-up</h3>
-
-                        The runner-up award for best paper was presented to <b>Mark S Graham</b> and collegues for their work:  <a href='https://link.springer.com/chapter/10.1007/978-3-030-60365-6_3'>Hierarchical Brain Parcellation with Uncertainty</a>.
-
-                        <h3>Proceedings</h3>
-
-                        The full Springer proceedings for the UNSURE 2020 workshop are available here: <a href='https://link.springer.com/book/10.1007/978-3-030-60365-6'>https://link.springer.com/book/10.1007/978-3-030-60365-6</a>
-
-                        <h3>Video Recordings</h3>
-
-                        You can find all video recordings of the talks held at UNSURE2020 on <a href="https://www.youtube.com/channel/UChxABIVmukTJzHr0k6KwlnQ">this Youtube channel</a>.
-
-                        <h3>Presentation Slides</h3>
-
-                        <ul>
-                            <li>Keynote talk by <b>Koen van Leemput</b>: <a href="slides/K1_unsure.pptx">Input and Output Uncertainty in Medical Image Analysis</a>
-
-                            <li>Keynote talk by <b>Yingzhen Li</b>: <a href="slides/K2_yingzhen_li.pdf">How accurate is the uncertainty estimate from your Bayesian neural networks?</a>
-
-                            <hr>
-
-                            <li>Long Oral by <b>Raghav Mehta et al.</b>: <a href="slides/LO1_UNSURE_2019.pdf">Propagating Uncertainty Across Cascaded Medical Imaging Tasks for Improved Deep learning Inference</a>
-
-                            <li>Spotlight by <b>Dennis Madsen et al.</b>: <a href="slides/SP1_2019_UNSURE_MADSEN.pptx">Probabilistic Surface Reconstruction with Unknown Correspondence</a>
-
-                            <li>Spotlight by <b>Alireza Sedghi et al.</b>: <a href="slides/SP2_unsure_workshop.pptx">Probabilistic Image Registration via Deep Multi-class Classification Characterizing Uncertainty</a>
-
-                            <li>Spotlight by <b>Gregor N Ramien et al.</b>: <a href="slides/SP3_RegRCNN_oral_presentation.pdf">Reg R-CNN: Lesion Detection and Grading under Noisy Labels</a>
-
-                            <li>Spotlight by <b>Pieter Van Molle et al.</b>: <a href="slides/SP4_Pieter_Van_Molle_Spotlight.pdf">Quantifying Uncertainty of Deep Neural Networks in Skin Lesion Classification</a>
-
-                            <li>Long Oral by <b>Mikael Agn et al.</b>: <a href="slides/LO2_UNSURE10_miag.pptx">Fast Nonparametric Mutual-Information based Registration and Uncertainty Estimation</a>
-
-                            <li>Long Oral by <b>Tim Adler et al.</b>: <a href="slides/LO3_2019_10_MICCAI_UNSURE.pptx">Out of Distribution Detection for Intra-Operative Functional Imaging</a>
-
-
-                        </ul> 
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
    <section class="features section-padding" id="program">
         <div class="container">
@@ -246,7 +189,7 @@
 
                         <strong>Timezone Information:</strong> All times below are given in <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC Time</a>. Please be mindful of time zone conversions when planning your attendance.
 
-                        The proceedings for the workshop are available <a href='https://link.springer.com/book/10.1007/978-3-030-87735-4'>here</a>.
+                        <!-- The proceedings for the workshop are available <a href='https://link.springer.com/book/10.1007/978-3-030-87735-4'>here</a>. -->
 
                           <!-- <ul>
                               <li><span>09:00-09:10</span> <strong>Introduction</strong></li>
@@ -353,93 +296,55 @@
     </section>
 
 
-<!--     <section class="features-list section-padding" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="feature-list">
-                        <h2>Details: About UNSURE</h2>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section> -->
-
-
-
-
     <section class="features-list section-padding" id="people">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="feature-list">
-                    <h2>UNSURE2021 Organizing Committee</h2>
+                    <h2>Organizing Committee</h2>
 
                     <h3>Organizers</h3>
 
-                    <!-- <div class="row">
-                            <div class="col-xs-2 people-portrait"><a href="https://uni-tuebingen.de/en/research/core-research/cluster-of-excellence-machine-learning/research/research/cluster-research-groups/research-groups/ml-in-medical-image-analysis/" target="_blank"><img src="img/people-Christian-150.jpg"></a></div>
-                            <div class="col-xs-8 people-text"><h4><a href="https://uni-tuebingen.de/en/research/core-research/cluster-of-excellence-machine-learning/research/research/cluster-research-groups/research-groups/ml-in-medical-image-analysis/" target="_blank">Christian Baumgartner</a></h4>
-                            Cluster of Excellence: Machine Learning for Science, University of Tubingen </div>
-                    </div> -->
-                    <!-- <div class="row">
-                        <div class="col-xs-2  people-portrait"><a href="http://adalca.mit.edu" target="_blank"><img src="img/people-Adrian-150.jpg"></a></div>
-                        <div class="col-xs-8 people-text"><h4><a href="http://adalca.mit.edu" target="_blank">Adrian Dalca</a></h4>
-                            CSAIL, MIT and <br/> MGH, Harvard Medical School </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2  people-portrait"><a href="https://www.kcl.ac.uk/people/dr-carole-sudre" target="_blank"><img src="img/people-Carole-150.jpg"></a></div>
-                        <div class="col-xs-8 people-text"><h4><a href="https://www.kcl.ac.uk/people/dr-carole-sudre" target="_blank">Carole Sudre</a></h4>
-                            MRC Unit for Lifelong Health and Ageing, University College London / Centre for Medical Image Computing, University College London / Department of Biomedical Engineering, King's College London </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2  people-portrait"><a href="https://rt416.github.io/" target="_blank"><img src="img/people-Ryutaro-150.jpg"></a></div>
-                        <div class="col-xs-8 people-text"><h4><a href="https://rt416.github.io/" target="_blank">Ryutaro Tanno</a></h4>
-                        Department of Computer Science, University College London </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2 people-portrait"><a href="http://nmr.mgh.harvard.edu/~koen/" target="_blank"><img src="img/people-koen-150.png"></a></div>
-                        <div class="col-xs-8 people-text"><h4><a href="http://nmr.mgh.harvard.edu/~koen/" target="_blank">Koen Van Leemput</a></h4>
-                        Technical University of Denmark and <br/> Harvard Medical School </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2  people-portrait"><a href="https://lmi.med.harvard.edu/people/william-wells" target="_blank"><img src="img/people-Sandy-150.jpg"></a></div>
-                        <div class="col-xs-8 people-text"><h4><a href="https://lmi.med.harvard.edu/people/william-wells" target="_blank">William (Sandy)  Wells</a></h4>
-                        Radiology, BWH, Harvard Medical School </div>
-                    </div> -->
+                    <ul>
+                        <li><strong>Xinxing Xu</strong> <br>
+                            Institute of High Performance Computing (IHPC), A*STAR, Singapore. <br>
+                            <a href='xuxinx@ihpc.a-star.edu.sg'>xuxinx@ihpc.a-star.edu.sg</a>
+                        </li>
+                        
+                        <li>
+                            <strong>Xiaomeng Li</strong> <br>
+                            The Hong Kong University of Science and Technology, Hongkong, China. <br>
+                            <a href='eexmli@ust.hk'>eexmli@ust.hk</a>
+                        </li>
+                        <li>
+                            <strong>Dwarikanath Mahapatra</strong> <br>
+                            Inception Institute of Artificial Intelligence, Abu Dhabi, UAE. <br>
+                            <a href='dwarikanath.mahapatra@inceptioniai.org'>dwarikanath.mahapatra@inceptioniai.org</a>
+                        </li>
+                        <li>
+                            <strong>Li Cheng</strong> <br>
+                            ECE dept., University of Alberta, Canada. <br>
+                            <a href='lcheng5@ualberta.ca'>lcheng5@ualberta.ca</a>
+                        </li>
+                        <li>
+                            <strong>Caroline Petitjean</strong>  <br>
+                            LITIS, University of Rouen, France. <br>
+                            <a href='caroline.petitjean@univ-rouen.fr'>caroline.petitjean@univ-rouen.fr</a>
+                        </li>
+                        <li><strong>Huazhu Fu</strong> <br>
+                            Institute of High Performance Computing (IHPC), A*STAR, Singapore. <br>
+                            <a href='hzfu@ieee.org'>hzfu@ieee.org</a>
+                        </li>
+                    </ul>
 
 
 
                     <h3>Program Committee</h3>
                     <ul>
 
-                        <li>Abc (HKUST)</li>
+                        <li>TBC</li>
 
-                    </ul>  
-
-                    <!-- <div class="row">
-                        <div class="col-xs-2  people-portrait"><a href="?" target="_blank"><img src="img/people-AdvanEs-150.jpg"></a></div>
-                        <div class="col-xs-8 people-text"><h4><a href="?" target="_blank">Ad van Es</a></h4>
-                        Department of Radiology & Nuclear Medicine, Erasmus MC </div>
-                    </div> -->
-
-                    <!--
-                    <div class="row">
-                        <div class="col-xs-2  people-portrait"><a href="https://www.erasmusmc.nl/cs-stroke-center/over-ons-centrum/Teamleden_links/5423568/BIO_Bart_Emmer" target="_blank"><img src="img/people-Bart-150.jpg"></a></div>
-                        <div class="col-xs-8 people-text"><h4><a href="https://www.erasmusmc.nl/cs-stroke-center/over-ons-centrum/Teamleden_links/5423568/BIO_Bart_Emmer" target="_blank">Bart Emmer</a></h4>
-                        Department of Radiology, Amsterdam Medical Center</div>
-                    </div>
-                    -->
-
-                    <h3 id="contact"> Contact </h3>
-                    For general inquiries please send an email to: <a href='abc@ust.hk'>abc@ust.hk</a>
-                    <!-- <p> Please contact us for further questions and comments via email at <a href="mailto:switchworkshop2019@gmail.com"> switchworkshop2019@gmail.com</a></p> -->
-                    </div>
+                    </ul>   
                 </div>
             </div>
         </div>
@@ -472,14 +377,14 @@
         <div class="container">
             <div class="row">
 
-                    <div class="col-xs-3"  style="padding-top:5px">
+                    <!-- <div class="col-xs-3"  style="padding-top:5px">
                         <div class="ssk-lg ssk-group">
                         <a href="https://www.facebook.com/sharer/sharer.php?u=http://unsure.miccai.ethz.ch/" class="ssk ssk-facebook ssk-lg"></a>
                         <a href="https://twitter.com/intent/tweet?text=http://unsure.miccai.ethz.ch/" class="ssk ssk-twitter ssk-lg"></a>
                         <a href="https://plus.google.com/share?url={http://unsure.miccai.ethz.ch/}" class="ssk ssk-google-plus ssk-lg"></a>
                         <a href="https://www.linkedin.com/cws/share?url=http://unsure.miccai.ethz.ch/" class="ssk ssk-linkedin ssk-lg"></a>
                         </div>
-                    </div>
+                    </div> -->
 
                         <div class="col-xs-8">
                             <div class="to-top-wrap">
@@ -493,7 +398,7 @@
             </div>
         </div>
     </section>
-
+<!--
     <footer>
         <div class="container">
 
@@ -508,13 +413,12 @@
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="#sponsors">Sponsors</a></li>
                     </ul>
-                  <!-- <p>Website: <a href="http://adalca.mit.edu" taget="_blank">Adrian Dalca </a> using <a href="https://tympanus.net/codrops/2015/08/11/freebie-sedna-one-page-website-template/">Sedna</a> template. |                         <a href="http://tympanus.net/codrops/licensing/">Licence</a> | Crafted with <span class="fa fa-heart pulse2"></span> for <a href="https://tympanus.net/codrops/">Codrops</a>.</p> -->
                 </div>
                 </div>
             </div>
         </div>
     </footer>
-
+-->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
